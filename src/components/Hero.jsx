@@ -18,20 +18,32 @@ const Hero = () => {
         <Typography
           sx={{
             color: "#001c46",
-            fontSize: "2.5em",
-            textAlign: "center",
+            fontSize: { xs: "2.5em", sm: "3.5em", md: "5.5em" },
+            width: "100%",
+            textAlign: {
+              xs: "center",
+              lg: "start",
+            },
+            lineHeight: "1.1em",
           }}
           variant="h6"
         >
-          Full-stack{" "}
-          <Box
-            sx={{
+          Full-stack
+          <span
+            style={{
               color: "#2762f8",
             }}
           >
-            blockchain
-          </Box>
-          development.
+            {""} blockchain {""}
+          </span>
+          development
+          <span
+            style={{
+              color: "#2762f8",
+            }}
+          >
+            .
+          </span>
         </Typography>
       </Box>
       {/* h2 */}
@@ -40,7 +52,11 @@ const Hero = () => {
           color: "#001c46",
           textAlign: "center",
           fontWeight: "medium",
-          fontSize: "1.5em",
+          fontSize: {
+            xs: "1.5em",
+            sm: "2.5em",
+            md: "3.5em",
+          },
         }}
         variant="h6"
       >
@@ -53,7 +69,10 @@ const Hero = () => {
           color: "#001c46",
           textAlign: "center",
           fontWeight: "medium",
-          fontSize: "0.9em",
+          fontSize: {
+            xs: "0.9em",
+            sm: "1.2em",
+          },
         }}
         variant="h6"
       >
@@ -81,7 +100,20 @@ const Hero = () => {
         }}
       >
         {" "}
-        Write me on muratcanyukselpro@gmail.com{" "}
+        Write me on muratcanyukselpro@gmail.com <br></br> or visit my Upwork
+        profile by clicking{" "}
+        <a
+          href="https://www.upwork.com/freelancers/~013e02c0111a99e5d5"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: "none",
+            color: "#2762f8",
+            borderBottom: "1px solid #2762f8",
+          }}
+        >
+          here
+        </a>
       </Typography>
     </Box>
   );
