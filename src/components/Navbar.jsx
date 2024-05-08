@@ -26,6 +26,9 @@ export default function ButtonAppBar() {
           color: "black",
           height: "5.5em",
           paddingTop: "1em",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Toolbar
@@ -33,6 +36,12 @@ export default function ButtonAppBar() {
             display: "flex",
             // alignItems: "center",
             justifyContent: "space-between",
+            width: {
+              xs: "90%",
+              sm: "80%",
+              md: "60%",
+              lg: "60%",
+            },
           }}
         >
           <Box
@@ -49,9 +58,9 @@ export default function ButtonAppBar() {
                 color: "#001c46",
                 flexGrow: 1,
                 fontSize: {
-                  xs: "1.35em",
-                  sm: "2em",
-                  md: "2em",
+                  xs: "0.8em",
+                  sm: "1.35em",
+                  md: "1.5em",
                 },
                 fontWeight: "bold",
               }}
@@ -95,8 +104,7 @@ export default function ButtonAppBar() {
                 margin: "0 20px",
                 fontSize: {
                   xs: "0.8em",
-                  sm: "1.5em",
-                  md: "1.5em",
+                  sm: "1.2em",
                 },
               }}
             >
