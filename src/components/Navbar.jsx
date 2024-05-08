@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function ButtonAppBar() {
@@ -22,7 +21,7 @@ export default function ButtonAppBar() {
       <AppBar
         position="static"
         sx={{
-          backgroundColor: "white",
+          backgroundColor: "#f2f5fa",
           color: "black",
           height: "5.5em",
           paddingTop: "1em",
@@ -75,7 +74,7 @@ export default function ButtonAppBar() {
                   md: "2em",
                 },
                 width: "1.8px",
-                backgroundColor: "#001c46",
+                backgroundColor: "#2762f8",
                 display: "inline-block",
                 marginLeft: "0.5em",
                 opacity: isVisible ? 1 : 0, // Set opacity based on visibility state

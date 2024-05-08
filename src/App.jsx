@@ -1,9 +1,17 @@
 import { Box } from "@mui/material";
 import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
 
 const App = () => {
+  // backgroundColor: "#001c46",
+
+  //   backgroundColor: "#2762f8",
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: "#f2f5fa",
+      }}
+    >
       <Navbar />
       <Box
         sx={{
@@ -12,6 +20,7 @@ const App = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          marginTop: "1em",
         }}
       >
         <Box
@@ -24,7 +33,7 @@ const App = () => {
             },
           }}
         >
-          App
+          <Hero />
         </Box>
       </Box>
     </Box>
