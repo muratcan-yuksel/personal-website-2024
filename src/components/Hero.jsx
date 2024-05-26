@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
-
+import StarsIcon from "@mui/icons-material/Stars";
 const Hero = () => {
   return (
     <Box>
@@ -100,8 +100,15 @@ const Hero = () => {
         }}
       >
         {" "}
-        Write me on muratcanyukselpro@gmail.com <br></br> or visit my Upwork
-        profile by clicking{" "}
+        Write me on muratcanyukselpro@gmail.com <br></br> or visit my{" "}
+        <span
+          style={{
+            color: "#2762f8",
+          }}
+        >
+          Top Rated{" "}
+        </span>
+        Upwork profile by clicking{" "}
         <a
           href="https://www.upwork.com/freelancers/~013e02c0111a99e5d5"
           target="_blank"
