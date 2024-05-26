@@ -9,6 +9,7 @@ import review5 from "../assets/images/reviews/5.png";
 import review6 from "../assets/images/reviews/6.png";
 import review7 from "../assets/images/reviews/7.png";
 import review8 from "../assets/images/reviews/8.png";
+import review9 from "../assets/images/reviews/9.png";
 import bigReview from "../assets/images/reviews/bigone.png";
 import { Box } from "@mui/material";
 const Reviews = () => {
@@ -37,6 +38,9 @@ const Reviews = () => {
     {
       image: review8,
     },
+    {
+      image: review9,
+    },
   ];
 
   const renderReviews = () => {
@@ -46,7 +50,7 @@ const Reviews = () => {
           key={review.image}
           sx={{
             width: "100%",
-            height: "300px",
+            height: "350px",
           }}
         >
           {" "}
@@ -54,7 +58,6 @@ const Reviews = () => {
             style={{
               width: "100%",
               height: "100%",
-              margin: "20px 0",
               objectFit: "contain",
             }}
             src={review.image}
@@ -92,6 +95,7 @@ const Reviews = () => {
         height: "auto",
         marginTop: "10em",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -123,6 +127,9 @@ const Reviews = () => {
           {renderReviews()}
         </Carousel>
       </Box>
+      {/* <Box>
+        <img src={bigReview} style={{ width: "100%" }} />
+      </Box> */}
     </Box>
   );
 };
