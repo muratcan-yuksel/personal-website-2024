@@ -96,20 +96,43 @@ const Reviews = () => {
         alignItems: "center",
       }}
     >
-      <Typography
+      {" "}
+      <Box
         sx={{
-          color: "#2762f8",
-          fontSize: { xs: "1.5em", sm: "2.5em" },
-          width: "auto",
-          textAlign: {
-            xs: "center",
-            lg: "start",
+          width: {
+            xs: "90%",
+            sm: "80%",
+            md: "60%",
+            lg: "60%",
           },
-          lineHeight: "1.1em",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: 0,
+          color: "#001c46",
+          textAlign: "center",
+          fontWeight: "medium",
+          marginTop: "2em",
+
+          borderBottom: "3px solid #001c46",
         }}
       >
-        What clients say about me
-      </Typography>
+        <Typography
+          sx={{
+            color: "#001c46",
+            fontSize: { xs: "1.5em", sm: "2.5em" },
+            width: "auto",
+            textAlign: {
+              xs: "center",
+              lg: "start",
+            },
+            lineHeight: "1.1em",
+          }}
+        >
+          What clients say about me
+        </Typography>
+      </Box>
       <Box
         sx={{
           width: "80%",

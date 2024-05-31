@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Reviews from "./components/Reviews.jsx";
@@ -36,6 +36,7 @@ const App = () => {
           <Hero />
         </Box>
       </Box>
+
       <Reviews />
     </Box>
   );

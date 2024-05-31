@@ -68,6 +68,7 @@ const Help = () => {
                   "&:hover": {
                     backgroundColor: "#e0e0e0", // Darker color on hover
                   },
+                  fontSize: "1.5em",
                 }}
               >
                 <Typography sx={{ color: "#2762f8", fontWeight: "bold" }}>
