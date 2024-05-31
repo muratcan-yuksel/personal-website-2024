@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
 import StarsIcon from "@mui/icons-material/Stars";
+import Help from "./Help";
 const Hero = () => {
   return (
     <Box>
@@ -26,7 +27,6 @@ const Hero = () => {
             },
             lineHeight: "1.1em",
           }}
-          variant="h6"
         >
           Full-stack
           <span
@@ -53,14 +53,13 @@ const Hero = () => {
           textAlign: "center",
           fontWeight: "medium",
           fontSize: {
-            xs: "1.5em",
-            sm: "2.5em",
-            md: "3.5em",
+            xs: "1em",
+            sm: "2em",
           },
         }}
         variant="h6"
       >
-        Heading 2
+        Transforming Ideas into Secure, Scalable Blockchain Solutions{" "}
       </Typography>
 
       {/* paragraph */}
@@ -76,11 +75,12 @@ const Hero = () => {
         }}
         variant="h6"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis
-        doloribus est amet explicabo omnis error dicta, aperiam inventore rerum
-        assumenda id, recusandae voluptatibus fugiat officiis natus corporis
-        provident enim!
+        Welcome to my professional blockchain development service. With
+        extensive experience in creating robust and innovative blockchain
+        solutions, I am here to help you navigate the complex world of
+        blockchain technology and harness its full potential for your business.
       </Typography>
+      <Help />
       <Box
         sx={{
           display: "flex",
