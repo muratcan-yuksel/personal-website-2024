@@ -11,35 +11,31 @@ import review7 from "../assets/images/reviews/7.png";
 import review8 from "../assets/images/reviews/8.png";
 import review9 from "../assets/images/reviews/9.png";
 import bigReview from "../assets/images/reviews/bigone.png";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 const Reviews = () => {
   const reviews = [
     {
-      image: review1,
+      image: review9,
     },
-    {
-      image: review2,
-    },
-    {
-      image: review3,
-    },
+
     {
       image: review4,
     },
     {
-      image: review5,
+      image: review8,
+    },
+
+    {
+      image: review7,
     },
     {
       image: review6,
     },
     {
-      image: review7,
+      image: review5,
     },
     {
-      image: review8,
-    },
-    {
-      image: review9,
+      image: review1,
     },
   ];
 
@@ -100,6 +96,20 @@ const Reviews = () => {
         alignItems: "center",
       }}
     >
+      <Typography
+        sx={{
+          color: "#2762f8",
+          fontSize: { xs: "1.5em", sm: "2.5em" },
+          width: "auto",
+          textAlign: {
+            xs: "center",
+            lg: "start",
+          },
+          lineHeight: "1.1em",
+        }}
+      >
+        What clients say about me
+      </Typography>
       <Box
         sx={{
           width: "80%",
