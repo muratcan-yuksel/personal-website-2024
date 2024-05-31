@@ -5,6 +5,29 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
 const Help = () => {
+  const offers = [
+    {
+      title: "Smart Contract Development",
+      description:
+        "Secure and reliable smart contracts for various blockchain platforms like Ethereum, Binance Smart Chain, and more.",
+    },
+    {
+      title: "DApp Development",
+      description:
+        "User-friendly and feature-rich decentralized applications to leverage the power of blockchain.",
+    },
+    {
+      title: "Blockchain Consulting",
+      description:
+        "Expert advice on blockchain strategy, technology selection, and implementation.",
+    },
+    {
+      title: "Integration Services",
+      description:
+        "Seamless integration of blockchain technology with your existing systems and processes.",
+    },
+  ];
+
   return (
     <div>
       <Typography
@@ -12,9 +35,11 @@ const Help = () => {
           color: "#001c46",
           textAlign: "center",
           fontWeight: "medium",
+          marginTop: "2em",
           fontSize: {
             xs: "1em",
             sm: "2em",
+            md: "3em",
           },
         }}
         variant="h6"
@@ -22,9 +47,6 @@ const Help = () => {
         I can help you with
       </Typography>
       <Box>
-        <Typography sx={{ color: "#001c46" }}>
-          Call us @ 123-456-7890
-        </Typography>
         <List
           sx={{
             width: "100%",
@@ -35,45 +57,24 @@ const Help = () => {
             },
           }}
         >
-          <ListItem>
-            <ListItemText sx={{ color: "#001c46" }}>
+          {offers.map((offer, index) => (
+            <ListItem key={index}>
               <Card
                 variant="outlined"
                 sx={{
                   padding: "1em",
+                  minHeight: "150px",
                 }}
               >
-                {" "}
                 <Typography sx={{ color: "#2762f8", fontWeight: "bold" }}>
-                  Smart Contract Development
-                </Typography>{" "}
-                <br></br>
-                <Typography sx={{}}>
-                  Secure and reliable smart contracts for various blockchain
-                  platforms like Ethereum, Binance Smart Chain, and more.{" "}
-                </Typography>{" "}
+                  {offer.title}
+                </Typography>
+                <br />
+                <Typography>{offer.description}</Typography>
               </Card>
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText sx={{ color: "#001c46" }}>
-              DApp Development: User-friendly and feature-rich decentralized
-              applications to leverage the power of blockchain.{" "}
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText sx={{ color: "#001c46" }}>
-              Blockchain Consulting: Expert advice on blockchain strategy,
-              technology selection, and implementation.{" "}
-            </ListItemText>
-          </ListItem>{" "}
-          <ListItem>
-            <ListItemText sx={{ color: "#001c46" }}>
-              Integration Services: Seamless integration of blockchain
-              technology with your existing systems and processes.
-            </ListItemText>
-          </ListItem>
-        </List>{" "}
+            </ListItem>
+          ))}
+        </List>
       </Box>
     </div>
   );
