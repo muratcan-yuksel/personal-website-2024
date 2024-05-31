@@ -41,6 +41,7 @@ const Help = () => {
             sm: "2em",
             md: "3em",
           },
+          borderBottom: "3px solid #001c46",
         }}
         variant="h6"
       >
@@ -64,6 +65,9 @@ const Help = () => {
                 sx={{
                   padding: "1em",
                   minHeight: "150px",
+                  "&:hover": {
+                    backgroundColor: "#e0e0e0", // Darker color on hover
+                  },
                 }}
               >
                 <Typography sx={{ color: "#2762f8", fontWeight: "bold" }}>

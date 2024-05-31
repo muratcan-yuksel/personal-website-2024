@@ -23,7 +23,6 @@ const Hero = () => {
             width: "100%",
             textAlign: {
               xs: "center",
-              lg: "start",
             },
             lineHeight: "1.1em",
           }}
@@ -56,6 +55,8 @@ const Hero = () => {
             xs: "1em",
             sm: "2em",
           },
+          marginTop: "0.5em",
+          marginBottom: "0.5em",
         }}
         variant="h6"
       >
@@ -75,10 +76,11 @@ const Hero = () => {
         }}
         variant="h6"
       >
-        Welcome to my professional blockchain development service. With
-        extensive experience in creating robust and innovative blockchain
-        solutions, I am here to help you navigate the complex world of
-        blockchain technology and harness its full potential for your business.
+        With extensive expertise in blockchain technology, I specialize in
+        developing robust and innovative solutions tailored to your business
+        needs. My goal is to guide you through the complexities of blockchain
+        technology and help you leverage its full potential to achieve your
+        business objectives.
       </Typography>
       <Help />
       <Box
@@ -121,6 +123,16 @@ const Hero = () => {
         >
           here
         </a>
+      </Typography>
+      <Typography
+        sx={{
+          color: "#001c46",
+          textAlign: "center",
+          fontWeight: "medium",
+          fontSize: "1.5em",
+        }}
+      >
+        {" "}
       </Typography>
     </Box>
   );
