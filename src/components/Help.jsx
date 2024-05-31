@@ -64,7 +64,7 @@ const Help = () => {
                 variant="outlined"
                 sx={{
                   padding: "1em",
-                  minHeight: "150px",
+                  height: "200px",
                   "&:hover": {
                     backgroundColor: "#e0e0e0", // Darker color on hover
                   },

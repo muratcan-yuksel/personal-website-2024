@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
 import StarsIcon from "@mui/icons-material/Stars";
 import Help from "./Help";
+import Why from "./Why";
 const Hero = () => {
   return (
     <Box>
@@ -83,6 +84,7 @@ const Hero = () => {
         business objectives.
       </Typography>
       <Help />
+      <Why />
       <Box
         sx={{
           display: "flex",

@@ -121,7 +121,11 @@ const Reviews = () => {
         <Typography
           sx={{
             color: "#001c46",
-            fontSize: { xs: "1.5em", sm: "2.5em" },
+            fontSize: {
+              xs: "1em",
+              sm: "2em",
+              md: "3em",
+            },
             width: "auto",
             textAlign: {
               xs: "center",
