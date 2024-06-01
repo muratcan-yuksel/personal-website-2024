@@ -28,6 +28,7 @@ const MostRequested = () => {
         <Accordion
           sx={{
             padding: "1em 10px",
+            width: "100%",
           }}
         >
           <AccordionSummary
@@ -131,24 +132,37 @@ const MostRequested = () => {
           borderBottom: "3px solid #001c46",
         }}
       >
-        <Typography
+        <Box
           sx={{
-            color: "#001c46",
-            fontSize: {
-              xs: "1em",
-              sm: "2em",
-              md: "3em",
-            },
-            width: "auto",
-            textAlign: {
-              xs: "center",
-              lg: "start",
-            },
-            lineHeight: "1.1em",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          Most Requested Projects
-        </Typography>
+          <Typography
+            sx={{
+              color: "#001c46",
+              fontSize: {
+                xs: "1em",
+                sm: "2em",
+                md: "3em",
+              },
+              width: "auto",
+              textAlign: {
+                xs: "center",
+                lg: "start",
+              },
+              lineHeight: "1.1em",
+            }}
+          >
+            Most Requested Projects
+          </Typography>
+          <Typography>
+            These are the projects most of my clients request. <br />
+            If you don't see what you're looking for, no worries. Just contact
+            me and I can build your idea for you.
+          </Typography>
+        </Box>
       </Box>
       {/* title ends */}
       <Box
