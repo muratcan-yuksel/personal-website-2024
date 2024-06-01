@@ -77,6 +77,7 @@ const Why = () => {
                       color: "#2762f8",
                       fontWeight: "bold",
                       margin: 0,
+                      fontSize: "0.8em",
                     }}
                   >
                     {offer.title}:

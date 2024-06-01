@@ -68,14 +68,21 @@ const Help = () => {
                   "&:hover": {
                     backgroundColor: "#e0e0e0", // Darker color on hover
                   },
-                  fontSize: "1.5em",
                 }}
               >
-                <Typography sx={{ color: "#2762f8", fontWeight: "bold" }}>
+                <Typography
+                  sx={{
+                    color: "#2762f8",
+                    fontWeight: "bold",
+                    fontSize: "1.5em",
+                  }}
+                >
                   {offer.title}
                 </Typography>
                 <br />
-                <Typography>{offer.description}</Typography>
+                <Typography sx={{ fontSize: "1em" }}>
+                  {offer.description}
+                </Typography>
               </Card>
             </ListItem>
           ))}

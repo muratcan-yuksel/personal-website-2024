@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Reviews from "./components/Reviews.jsx";
+import MostRequested from "./components/MostRequested.jsx";
 const App = () => {
   // backgroundColor: "#001c46",
 
@@ -38,6 +39,8 @@ const App = () => {
       </Box>
 
       <Reviews />
+
+      <MostRequested />
     </Box>
   );
 };
