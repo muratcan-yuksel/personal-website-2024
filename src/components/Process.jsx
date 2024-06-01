@@ -14,14 +14,21 @@ const Process = () => {
           height: "100%",
           padding: "1em 10px",
           margin: "1em 0",
-          background: "#f5f5f5",
           borderBottom: "1px solid lightgray",
         }}
       >
-        <Typography sx={{ fontWeight: "bold" }}>
+        <Typography sx={{ fontWeight: "bold", paddingBottom: "0.5em" }}>
           {option.optionTitle}
         </Typography>
-        <Typography>{option.details}</Typography>
+        <Typography
+          sx={
+            {
+              // paddingLeft: "5px",
+            }
+          }
+        >
+          {option.details}
+        </Typography>
       </Box>
     ));
   };
@@ -78,6 +85,56 @@ const Process = () => {
             {hiringProcess.title}
           </Typography>
           <Typography>{hiringProcess.description}</Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "start",
+            width: "100%",
+            height: "100%",
+            padding: "1em 10px",
+            margin: "1em 0",
+            borderBottom: "1px solid lightgray",
+          }}
+        >
+          <Typography sx={{ fontWeight: "bold", paddingBottom: "0.5em" }}>
+            Discuss Your Project{" "}
+          </Typography>
+          <Typography
+            sx={
+              {
+                // paddingLeft: "5px",
+              }
+            }
+          >
+            Reach out to me via email at{" "}
+            <a
+              style={{
+                textDecoration: "none",
+                color: "#001c46",
+                fontWeight: "bold",
+              }}
+              href="mailto:"
+            >
+              muratcanyukselpro@gmail.com
+            </a>{" "}
+            or through{" "}
+            <a
+              style={{
+                textDecoration: "none",
+                color: "#001c46",
+                fontWeight: "bold",
+              }}
+              href="https://www.linkedin.com/in/muratcanyuksel/"
+            >
+              {" "}
+              LinkedIn{" "}
+            </a>{" "}
+            to discuss your project requirements and goals. We will have an
+            initial consultation to understand your needs, scope, and timeline.{" "}
+          </Typography>
         </Box>
         {renderHiringprocess()}
       </Box>
