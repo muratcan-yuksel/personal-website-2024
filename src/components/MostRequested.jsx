@@ -21,7 +21,7 @@ const MostRequested = () => {
           height: "100%",
           padding: "1em 10px",
           //   margin: "1em 0",
-          //   background: "white",
+          //   background: "#f5f5f5",
           //   borderBottom: "1px solid lightgray",
         }}
       >
@@ -107,6 +107,8 @@ const MostRequested = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "#001c46",
+        color: "#f5f5f5",
       }}
     >
       {" "}
@@ -124,12 +126,11 @@ const MostRequested = () => {
           justifyContent: "center",
           alignItems: "center",
           margin: 0,
-          color: "#001c46",
           textAlign: "center",
           fontWeight: "medium",
           marginTop: "2em",
 
-          borderBottom: "3px solid #001c46",
+          borderBottom: "3px solid #f5f5f5",
         }}
       >
         <Box
@@ -141,7 +142,6 @@ const MostRequested = () => {
         >
           <Typography
             sx={{
-              color: "#001c46",
               fontSize: {
                 xs: "1em",
                 sm: "2em",
@@ -157,7 +157,16 @@ const MostRequested = () => {
           >
             Most Requested Projects
           </Typography>
-          <Typography>
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontWeight: "medium",
+              fontSize: {
+                xs: "0.9em",
+                sm: "1.2em",
+              },
+            }}
+          >
             These are the projects most of my clients request. <br />
             If you don't see what you're looking for, no worries. Just contact
             me and I can build your idea for you.

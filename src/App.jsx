@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Reviews from "./components/Reviews.jsx";
 import MostRequested from "./components/MostRequested.jsx";
+import Process from "./components/Process.jsx";
 const App = () => {
   // backgroundColor: "#001c46",
 
@@ -41,6 +42,8 @@ const App = () => {
       <Reviews />
 
       <MostRequested />
+
+      <Process />
     </Box>
   );
 };
