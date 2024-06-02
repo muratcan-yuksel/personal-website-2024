@@ -36,11 +36,8 @@ const Why = () => {
           textAlign: "center",
           fontWeight: "medium",
           marginTop: "2em",
-          fontSize: {
-            xs: "1em",
-            sm: "2em",
-            md: "3em",
-          },
+          fontSize: "2em",
+
           borderBottom: "3px solid #001c46",
         }}
         variant="h6"

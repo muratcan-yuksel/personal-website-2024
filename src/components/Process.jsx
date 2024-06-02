@@ -67,11 +67,8 @@ const Process = () => {
           <Typography
             sx={{
               color: "#001c46",
-              fontSize: {
-                xs: "1em",
-                sm: "2em",
-                md: "3em",
-              },
+              fontSize: "2em",
+
               width: "auto",
               textAlign: {
                 xs: "center",

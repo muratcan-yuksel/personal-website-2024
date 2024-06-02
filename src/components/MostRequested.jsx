@@ -28,7 +28,10 @@ const MostRequested = () => {
         <Accordion
           sx={{
             padding: "1em 10px",
-            width: "100%",
+            width: {
+              xs: "90%",
+              md: "100%",
+            },
           }}
         >
           <AccordionSummary
@@ -42,9 +45,15 @@ const MostRequested = () => {
                 sx={{
                   width: "100%",
                   display: "flex",
-                  flexDirection: "row",
+                  flexDirection: {
+                    xs: "column",
+                    md: "row",
+                  },
                   justifyContent: "start",
-                  alignItems: "center",
+                  alignItems: {
+                    xs: "start",
+                    md: "center",
+                  },
                 }}
               >
                 <Typography
@@ -52,6 +61,10 @@ const MostRequested = () => {
                     fontSize: "1.2em",
                     marginRight: "1em",
                     fontWeight: "bold",
+                    marginBottom: {
+                      xs: "0.5em",
+                      md: "0",
+                    },
                   }}
                 >
                   {project.title}:
@@ -142,11 +155,8 @@ const MostRequested = () => {
         >
           <Typography
             sx={{
-              fontSize: {
-                xs: "1em",
-                sm: "2em",
-                md: "3em",
-              },
+              fontSize: "2em",
+
               width: "auto",
               textAlign: {
                 xs: "center",
