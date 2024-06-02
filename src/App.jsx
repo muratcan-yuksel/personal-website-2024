@@ -4,16 +4,13 @@ import Hero from "./components/Hero.jsx";
 import Reviews from "./components/Reviews.jsx";
 import MostRequested from "./components/MostRequested.jsx";
 import Process from "./components/Process.jsx";
+import ActionCall from "./components/ActionCall.jsx";
 const App = () => {
   // backgroundColor: "#001c46",
 
   //   backgroundColor: "#2762f8",
   return (
-    <Box
-      sx={{
-        backgroundColor: "#f2f5fa",
-      }}
-    >
+    <Box sx={{ width: "100%", height: "100%" }}>
       <Navbar />
       <Box
         sx={{
@@ -25,18 +22,10 @@ const App = () => {
           marginTop: "1em",
         }}
       >
-        <Box
-          sx={{
-            width: {
-              xs: "90%",
-              sm: "80%",
-              md: "60%",
-              lg: "60%",
-            },
-          }}
-        >
-          <Hero />
-        </Box>
+        <Hero />
+      </Box>
+      <Box sx={{ width: "100%", height: "100%" }}>
+        <ActionCall />
       </Box>
 
       <Reviews />

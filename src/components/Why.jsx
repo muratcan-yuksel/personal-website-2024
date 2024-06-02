@@ -58,12 +58,12 @@ const Why = () => {
           }}
         >
           {offers.map((offer, index) => (
-            <ul key={index}>
-              <li>
+            <Box key={index}>
+              <Box>
                 {" "}
                 <Box
                   sx={{
-                    padding: "1em 1em 1em 0 ",
+                    padding: "1em 1em 1em 0.5em ",
                     backgroundColor: "#f2f5fa",
                     // "&:hover": {
                     //   backgroundColor: "#e0e0e0", // Darker color on hover
@@ -86,8 +86,8 @@ const Why = () => {
                     </span>
                   </Typography>
                 </Box>
-              </li>
-            </ul>
+              </Box>
+            </Box>
           ))}
         </List>
       </Box>

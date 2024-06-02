@@ -5,7 +5,16 @@ import Help from "./Help";
 import Why from "./Why";
 const Hero = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        width: {
+          xs: "90%",
+          sm: "80%",
+          md: "60%",
+          lg: "60%",
+        },
+      }}
+    >
       {/* title */}
       <Box
         sx={
@@ -95,69 +104,7 @@ const Hero = () => {
           sx={{ color: "#2762f8", fontSize: "2em", marginTop: "1em" }}
         /> */}
       </Box>
-      <Typography
-        sx={{
-          color: "#001c46",
-          textAlign: "center",
-          fontWeight: "medium",
-          margin: "2em 0 1em 0",
-          fontSize: {
-            xs: "1em",
-            sm: "2em",
-            md: "3em",
-          },
-          borderBottom: "3px solid #001c46",
-        }}
-        variant="h6"
-      >
-        Let's Build the Future Together{" "}
-      </Typography>
-      <Typography
-        sx={{
-          color: "#001c46",
-          textAlign: "center",
-          fontWeight: "medium",
-          fontSize: "1.5em",
-          marginBottom: "1em",
-        }}
-      >
-        {" "}
-        Ready to take your business to the next level with blockchain
-        technology? Contact me to discuss your project and see how I can help
-        you achieve your goals.{" "}
-      </Typography>
-      <Typography
-        sx={{
-          color: "#001c46",
-          textAlign: "center",
-          fontWeight: "medium",
-          fontSize: "1.5em",
-        }}
-      >
-        {" "}
-        Write to me at muratcanyukselpro@gmail.com <br></br> or visit my{" "}
-        <span
-          style={{
-            color: "#2762f8",
-          }}
-        >
-          Top Rated{" "}
-        </span>
-        Upwork profile to learn more about my work and client testimonials by
-        clicking{" "}
-        <a
-          href="https://www.upwork.com/freelancers/~013e02c0111a99e5d5"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            textDecoration: "none",
-            color: "#2762f8",
-            borderBottom: "1px solid #2762f8",
-          }}
-        >
-          here
-        </a>
-      </Typography>
+
       <Typography
         sx={{
           color: "#001c46",
