@@ -45,7 +45,7 @@ const Why = () => {
         }}
         variant="h6"
       >
-        Why You'll Love Working with me{" "}
+        Why You'll Love Working with Me{" "}
       </Typography>
       <Box>
         <List

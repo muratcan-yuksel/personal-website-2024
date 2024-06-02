@@ -16,6 +16,12 @@ export default function ButtonAppBar() {
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []); // Run effect only once on component mount
+
+  const handleScroll = () => {
+    const section = document.getElementById("actionCall");
+    section.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -90,6 +96,7 @@ export default function ButtonAppBar() {
           >
             {" "}
             <Button
+              onClick={handleScroll}
               variant="contained"
               size="large"
               sx={{
@@ -109,7 +116,7 @@ export default function ButtonAppBar() {
             >
               Work with me
             </Button>{" "}
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </Box>
         </Toolbar>
       </AppBar>

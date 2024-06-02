@@ -5,10 +5,10 @@ import Reviews from "./components/Reviews.jsx";
 import MostRequested from "./components/MostRequested.jsx";
 import Process from "./components/Process.jsx";
 import ActionCall from "./components/ActionCall.jsx";
+import About from "./components/About.jsx";
+// backgroundColor: "#001c46",
+//   backgroundColor: "#2762f8",
 const App = () => {
-  // backgroundColor: "#001c46",
-
-  //   backgroundColor: "#2762f8",
   return (
     <Box sx={{ width: "100%", height: "100%" }}>
       <Navbar />
@@ -33,6 +33,7 @@ const App = () => {
       <MostRequested />
 
       <Process />
+      <About />
     </Box>
   );
 };

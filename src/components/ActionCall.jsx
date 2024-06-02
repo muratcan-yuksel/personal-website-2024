@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 const ActionCall = () => {
   return (
     <Box
+      id="actionCall"
       sx={{
         width: "100%",
         bgcolor: "#2762f8",
@@ -31,10 +32,10 @@ const ActionCall = () => {
           sx={{
             color: "#whitesmoke",
             textAlign: "center",
-            fontWeight: "medium",
             margin: "2em 0 1em 0",
             fontSize: "2em",
-            borderBottom: "3px solid #whitesmoke",
+            borderBottom: "3px solid whitesmoke",
+            fontWeight: "bold",
           }}
         >
           Let's Build the Future Together{" "}
