@@ -109,10 +109,9 @@ const About = () => {
           }}
         >
           {" "}
-          You can write to me at muratcanyukselpro@gmail.com <br></br> or find
-          me on the following platforms. Don't forget to check my coding
-          tutorials on Youtube! Maybe you can find the solution to your problem
-          there :)
+          You can write to me at mail@muratcanyuksel.xyz <br></br> or find me on
+          the following platforms. Don't forget to check my coding tutorials on
+          Youtube! Maybe you can find the solution to your problem there :)
         </Typography>
         {renderIcons()}
       </Box>

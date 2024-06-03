@@ -63,7 +63,7 @@ const ActionCall = () => {
           }}
         >
           {" "}
-          Write to me at muratcanyukselpro@gmail.com <br></br> or visit my{" "}
+          Write to me at mail@muratcanyuksel.xyz <br></br> or visit my{" "}
           <span
             style={{
               color: "whitesmoke",
