@@ -65,6 +65,7 @@ const Help = () => {
                   "&:hover": {
                     backgroundColor: "#e0e0e0", // Darker color on hover
                   },
+                  maxWidth: "550px",
                 }}
               >
                 <Typography

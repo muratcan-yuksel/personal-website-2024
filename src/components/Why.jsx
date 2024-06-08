@@ -61,7 +61,7 @@ const Why = () => {
                 <Box
                   sx={{
                     padding: "1em 1em 1em 0.5em ",
-                    backgroundColor: "#f2f5fa",
+                    backgroundColor: "white",
                     // "&:hover": {
                     //   backgroundColor: "#e0e0e0", // Darker color on hover
                     // },

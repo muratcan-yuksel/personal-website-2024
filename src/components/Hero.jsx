@@ -7,29 +7,32 @@ const Hero = () => {
   return (
     <Box
       sx={{
+        marginTop: {
+          xs: "1em",
+          md: "4em",
+        },
         width: {
           xs: "90%",
           sm: "80%",
-          md: "60%",
-          lg: "60%",
+          md: "70%",
         },
       }}
     >
       {/* title */}
       <Box
-        sx={
-          {
-            //   display: "flex",
-            //   justifyContent: "center",
-            //   alignItems: "center",
-            //   flexDirection: "column",
-          }
-        }
+        sx={{
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   flexDirection: "column",
+          width: "100%",
+        }}
       >
         <Typography
           sx={{
             color: "#001c46",
-            fontSize: { xs: "2.5em", sm: "3.5em", md: "5.5em" },
+            fontSize: { xs: "2.5em", sm: "3.5em", md: "6em", lg: "8em" },
+
             width: "100%",
             textAlign: {
               xs: "center",
@@ -64,6 +67,7 @@ const Hero = () => {
           fontSize: {
             xs: "1em",
             sm: "2em",
+            lg: "3em",
           },
           marginTop: "0.5em",
           marginBottom: "0.5em",
@@ -82,6 +86,7 @@ const Hero = () => {
           fontSize: {
             xs: "0.9em",
             sm: "1.2em",
+            lg: "1.5em",
           },
         }}
         variant="h6"

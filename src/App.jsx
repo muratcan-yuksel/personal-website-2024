@@ -10,7 +10,7 @@ import About from "./components/About.jsx";
 //   backgroundColor: "#2762f8",
 const App = () => {
   return (
-    <Box sx={{ width: "100%", height: "100%" }}>
+    <Box sx={{ width: "100%", height: "100%", backgroundColor: "#f2f5fa" }}>
       <Navbar />
       <Box
         sx={{

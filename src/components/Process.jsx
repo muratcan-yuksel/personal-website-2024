@@ -115,7 +115,7 @@ const Process = () => {
               }}
               href="mailto:"
             >
-              muratcanyukselpro@gmail.com
+              mail@muratcanyuksel.xyz
             </a>{" "}
             or through{" "}
             <a
