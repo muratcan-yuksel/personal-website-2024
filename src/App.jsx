@@ -8,7 +8,7 @@ const Resume = () => {
       <div className="header">
         <h1>MURAT CAN YÜKSEL</h1>
         <div className="contact-links">
-          <a href="https://www.muratcanyuksel.xyz/" target="_blank" rel="noopener noreferrer">Website</a>
+          <a href="https://audits.sherlock.xyz/watson/0xgondar" target="_blank" rel="noopener noreferrer">Audit Portfolio</a>
           <a href="https://www.linkedin.com/in/muratcanyuksel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/muratcan-yuksel" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.youtube.com/channel/UCP1hJydcsPZCwbn8rPiohsg" target="_blank" rel="noopener noreferrer">YouTube</a>
